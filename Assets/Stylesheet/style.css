@@ -1,0 +1,796 @@
+/* Glober setting */
+
+html, body {
+    overflow-x: hidden;
+  }
+body {
+    margin: 0px;
+    font-family: 'roboto', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+/* Common Setting */
+
+#header {
+    padding: 20px 0px;
+    z-index: 100;
+    transition: 0.7s;
+}
+
+#container .change {
+    background-color: black;
+    z-index: 10000;
+    height: 80px;
+    padding-top: 0px;
+}
+#main-navigation ul
+{
+    display: flex;
+}
+#main-navigation ul li {
+    letter-spacing: 1px;
+}
+
+#main-navigation ul a {
+    color: #fff;
+    padding-top: 7px;
+}
+
+#main-navigation ul li.active a,
+#main-navigation ul li.hover a {
+    color: #037EF3;
+}
+
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    right: 5%;
+}
+
+.menu-btn .line {
+    width: 30px;
+    display: block;
+    height: 3px;
+    background-color: #037EF3;
+    margin-bottom: 4px;
+    transition: 1s;
+}
+
+.checkbox {
+    position: fixed;
+    width: 30px;
+    display: block;
+    right: 5%;
+    opacity: 0;
+    z-index: 1000;
+}
+
+
+/* Banner */
+
+#banner {
+    height: 650px;
+    background-image: url("../images/banner.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner .snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#banner .small {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    animation: snow_large 23s infinite linear;
+}
+
+#banner .medium {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    animation: snow_large 20s infinite linear;
+}
+
+#banner .large {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    animation: snow_large 17s infinite linear;
+}
+
+#banner .small_1,
+#banner .medium_1,
+#banner .large_1 {
+    animation-delay: 5s;
+    transform: translateY(-100%);
+}
+
+@keyframes snow_large {
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(5%, 100%);
+    }
+}
+
+#banner .desc {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: 1000;
+}
+
+#banner .desc h4 {
+    color: #ffd900;
+    font-size: 20px;
+}
+
+#banner .desc h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner .desc h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+#banner .desc .button a {
+    border-radius: 30px;
+    width: 20%;
+}
+
+#skills {
+    padding:100px 0px;
+    background-image: url("../images/skill.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#skills .progress{
+    height: 10px;
+}
+#skills .col {
+    margin-bottom: 30px;
+    transition: 2s;
+}
+
+.heading h2 {
+    color: #333338;
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.15);
+}
+
+.heading h5 {
+    color: #037EF3;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+#skills .technology h5 {
+    letter-spacing: 2px;
+    color: #4f4f50;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.col-left {
+    transform: translateX(-550%);
+}
+
+.col-right {
+    transform: translateX(550%);
+}
+
+.skills-animate .col {
+    transform: translateX(0%);
+}
+
+#service {
+    padding:100px 0px;
+    background-image: url("../images/serve.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#service .heading {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+#service .heading h2 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#service .heading h6 {
+    color: #037EF3;
+    margin-bottom: 0px;
+}
+
+#service .serv {
+    background-color: rgba(243, 244, 245, 0.17);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    height: 380px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+#service .serv i {
+    color: #ffd900;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+#service .serv:hover {
+    background-color: #037ef3;
+}
+#service .anim-serv{
+    transition: 2s;
+}
+
+.col-service-1 {
+    transform: translateX(650%);
+}
+
+.col-service-2 {
+    transform: translateX(-650%);
+}
+
+.service-animate .anim-serv {
+    transform: translateX(0%);
+}
+
+#timelines {
+    background-image: url("../images/timeline.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 80px 0px;
+}
+#timelines .heading {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+#timelines h6 {
+    color: #037ef3;
+}
+
+#timelines h2 {
+    color: #333338;
+    font-weight: bold;
+}
+#timelines h3{
+    color: #333338;
+    font-weight: bold;
+}
+#Projects {
+    background-image: url("../images/stats.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 100px 0px;
+}
+#Projects .heading {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+#Projects .heading h6 {
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#Projects .heading h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#Projects .pro {
+    margin-bottom: 10px;
+    height: 300px;
+    background-color: #EDF3F3;
+    color: #fff;
+    padding: 5px;
+}
+.pro p{
+background-color: black;
+margin: 0px;
+padding: 10px 0px;
+}
+#Projects .pro a img {
+    width: 100%;
+    height: 85%;
+}
+#Projects .anim{
+    transition: 2s;
+}
+
+.col-first {
+    transform: translateX(700%);
+}
+
+.col-second {
+    transform: translateX(-650%);
+}
+
+.projects-animate .anim  {
+    transform: translateX(0%);
+}
+
+
+#about {
+    padding: 100px 0px;
+}
+
+#about .about_anim {
+    transition: 2s;
+}
+
+#about .heading h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#about .mypic{
+    height: 420px; 
+}
+#about .mypic img{
+    width: 100%;
+    height: 100%;
+}
+
+#about h3 {
+    color: #037EF3;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+#about .story
+{
+    font-size: 18px;
+}
+
+#about .pInfo p .list {
+    font-weight: bold;
+}
+
+.about-animate .about_anim {
+    transform: translateX(0%);
+}
+
+#contact {
+    background-image: url("../images/contact.png");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 100px 0px;
+}
+
+#contact .heading {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+#contact .heading h6 {
+    color: #037EF3;
+    font-size: 20px;
+}
+
+#contact .heading h2 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#contact .col {
+    transition: 2s;
+}
+
+#contact .col input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 20px;
+    outline: none;
+    padding: 15px 15px;
+    color: #fff;
+    background: none;
+    width: 100%;
+    letter-spacing: 1px;
+    border: 2px solid rgba(248, 249, 250, 0.36);
+}
+
+#contact .col .textarea {
+    height: 215px;
+}
+
+#contact .col button {
+    width: 15%;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+#contact .personal {
+    margin-top: 50px;
+}
+
+#contact .col i {
+    color: #ffd900;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#contact .col h6 {
+    color: #fff;
+}
+
+#contact .col p {
+    color: #fff;
+}
+
+#contact .col p a {
+    color: #fff;
+}
+
+.col-con1 {
+    transform: translateX(350%);
+}
+
+.col-con2 {
+    transform: translateX(-350%);
+}
+
+.contact-animate .col {
+    transform: translateX(0%);
+}
+
+footer {
+    background-image: url("https://storchplasticsurgery.com/wp-content/uploads/2017/04/footerBackground.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 25px 0px 15px 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Meida Query */
+
+
+@media(max-width:1200px) {
+    h1 {
+        font-size: 24px;
+    }
+    #main-navigation {
+        padding-top: 5px;
+    }
+}
+
+@media(max-width:992px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:1400px)
+{
+    #container #banner{
+        height: 1050px;
+    }
+}
+
+@media screen and (min-width:2200px) {
+#banner{
+    height: 1050px;
+}
+
+#container .change {
+    height: 100px;
+}
+#main-navigation ul li {
+    font-size: 26px;
+}
+
+ #banner .desc
+    {
+        top:50%;
+    }
+    
+    #banner .desc h4
+    {
+       font-size: 32px;
+    }
+    
+    #banner .desc h3
+    {
+        font-size: 42px;
+    }
+    #banner .desc h1
+    {
+        font-size: 60px;
+    }
+    
+    #banner .desc .button a
+    {
+        width: 40%;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    /* Responsive Banner */ 
+
+    .menu-btn {
+        display: block;
+    }
+    #main-navigation ul {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        transform: translateX(-100%);
+        transition: 1s;
+        text-align: center;
+    }
+    #main-navigation ul li {
+        margin: 20px 0px;
+    }
+    #main-navigation .checkbox:checked~ul {
+        transform: translateX(0%);
+    }
+    #main-navigation .checkbox:checked+.menu-btn .line:nth-child(2) {
+        transform: translateX(200px);
+    }
+    #main-navigation .checkbox:checked+.menu-btn .line:first-child {
+        transform: rotate(45deg);
+    }
+    #main-navigation .checkbox:checked+.menu-btn .line:last-child {
+        transform: rotate(-45deg);
+        margin-top: -14px;
+    }
+    
+    #banner
+    {
+    height: 500px;
+    }
+    #banner .desc
+    {
+        top:50%;
+    }
+    
+    #banner .desc h4
+    {
+       font-size: 12px;
+    }
+    
+    #banner .desc h3
+    {
+        font-size: 22px;
+    }
+    #banner .desc h1
+    {
+        font-size: 40px;
+    }
+    
+    #banner .desc .button a
+    {
+        width: 30%;
+    }
+
+
+    /* Responsive skills */
+     #skills
+    {
+         padding: 30px 0px ;
+    }
+    #skills .progress{
+        height: 7px;
+    }
+    #skills .container .col {
+        margin-bottom: 5px;
+    }
+    #skills .heading h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #skills .heading h5 {
+        font-size: 10px;
+    }
+    #skills .container .technology h5
+    { 
+        margin: 3px;  
+        font-size: 10px;
+        text-align: left;
+    }
+    
+    /* Responsive Service */
+    
+    #service
+    {
+        padding: 30px 0px;
+    }
+    #service .heading h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #service .heading h6
+     {
+    font-size: 10px;
+     } 
+     #service .serv{
+         height: 150px;
+         padding: 10px;
+     }   
+    #service .serv i
+    {
+        font-size: 20px;
+        margin: 0px;
+    }
+    #service .serv h4
+    {
+        font-size: 15px;
+    }
+    #service .serv p
+    {
+        font-size: 10px;
+    }
+
+
+/* Responsive Timelines */
+#timelines
+{
+    padding: 30px 0px;
+}
+#timelines h6
+{
+font-size: 10px;
+}
+
+#timelines h2
+{
+    font-size: 20px;
+}
+#timelines h3{
+    font-size: 15px;
+}
+#timelines p{
+    font-size: 10px;
+}
+#timelines .timeline__content{
+    padding: 5px;
+}
+
+    /* Responsive Project */
+
+#Projects
+ {
+     padding: 30px 0px;
+ }
+    #Projects .heading h6 {
+    font-size: 10px;
+    }
+    
+    #Projects .heading h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #Projects .pro p{
+        font-size: 10px;
+    }
+
+    /* Responsive About */
+    #about{
+        padding: 30px 0px;
+    }
+    #about h6{
+        font-size: 10px;
+    }
+    #about .heading h2{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    #about h3{
+        font-size: 15px;
+    }
+    #about .mypic{
+        height: 250px;
+    }
+    #about .story{
+        font-size: 10px;
+        margin: 3px;
+    }
+
+
+
+/* Responsive Cont act */
+    #contact{
+        padding: 30px 0px;
+    }
+    
+    #contact .heading h6 {
+        font-size: 10px;
+    }
+    
+    #contact .heading h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+    
+    #contact .col input[type="text"],
+    input[type="email"],
+    textarea {
+        height: 10px;
+        font-size: 10px;
+    }
+      
+    #contact .container .col button {
+        padding: 5px;
+        width: 30%;
+    }
+    
+    
+    #contact .container .col i {
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    #contact .container .col h6 {
+    font-size: 10px; 
+   }
+    
+    #contact .container .col p {
+        font-size: 10px;
+    }
+    
+    #contact .container .col p a 
+    {
+font-size: 10px; 
+   }
+
+   /* Responsive Footer */
+  #container footer {
+      padding: 5px ;
+        font-size: 14px;
+    }
+        
+}
